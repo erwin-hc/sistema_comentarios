@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravar Dados Firebase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    
+    <div class="box-container">   
+        <div class="box-form">
+    <h1>-Comentários<span><input id="count" readonly disabled></span></h1>
+<form id="form">
+<input style="text-transform: uppercase;" type="text"           id="inputNome" placeholder=" Nome: " required>
+<textarea style="text-transform: capitalize;"name="comentarios" id="inputComen" placeholder=" Comentar ..." required></textarea>
+<button class="btn" id="btn-salvar"   style="cursor: pointer;" >Comentar</button>  
+<button class="btn" id="btn-showmore" style="cursor: pointer;" >Todos</button>
+</form>
+        </div>
+        
+        <div id="box-lista"><br>
+            <ul style="list-style:none;" class="lista"></ul>
+        </div>
+       
+       
+    </div>    
+
+  <!-- FIREBSE -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+  <script src="firebase_config.js"></script>        
+  <!-- FIREBSE -->
+  <script src="/main.js"></script>    
+</body>
+</html>
