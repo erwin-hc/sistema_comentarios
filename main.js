@@ -85,7 +85,7 @@ function OK() {
         const ul = `      
         <div class="card-coments" id="cardId">
         <ul style="list-style:none;"  data-id='${doc.id}'></ul>
-        <li class="li-nome" style="text-transform: uppercase;">${doc.data().Nome} - <span style="text-transform: lowercase;" id="disse"><em>disse</em></span>,</li>
+        <li class="li-nome" style="text-transform: uppercase;">${doc.data().Nome}</li>
         <li class="li-data">${doc.data().Data}</li>
         <li class="li-coment" style="text-transform: Capitalize;">${doc.data().Comentario}</li>
         </div> 
