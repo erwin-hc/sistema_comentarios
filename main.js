@@ -20,7 +20,7 @@ function timeStamp() {
     var tz      = data.getTimezoneOffset(); // em minutos
     var str_data = dia + '/' + (mes+1) + '/' + ano4;
     var str_hora = hora + ':' + min;
-    var data_hora = str_data + ', ' + str_hora;
+    var data_hora = str_hora + ', ' + str_data;
     return(data_hora);
 }
 
