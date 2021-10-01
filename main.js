@@ -19,7 +19,7 @@ function timeStamp() {
     var mseg    = data.getMilliseconds();   // 0-999
     var tz      = data.getTimezoneOffset(); // em minutos
     var str_data = dia + '/' + (mes+1) + '/' + ano4;
-    var str_hora = hora + ':' + min;
+    var str_hora = hora + ':' + min + ':' + seg;
     var data_hora = str_hora + ', ' + str_data;
     return(data_hora);
 }
@@ -123,17 +123,17 @@ function OK() {
     conta_comentarios()
     });    
 
-    function myFunction() {
-        var x = listarDados;
-        var y = x.getElementsByTagName("div");
-        var i;
-        for (i = 0; i < y.length; i++) {
-            y[i].style.display="block";
-        }
-        db.collection('comments').get().then(function(querySnapshot) {      
-            document.getElementById('count').value = querySnapshot.size;
-        });
-    }
+    // function myFunction() {
+    //     var x = listarDados;
+    //     var y = x.getElementsByTagName("div");
+    //     var i;
+    //     for (i = 0; i < y.length; i++) {
+    //         y[i].style.display="block";
+    //     }
+    //     db.collection('comments').get().then(function(querySnapshot) {      
+    //         document.getElementById('count').value = querySnapshot.size;
+    //     });
+    // }
 
     function conta_comentarios(){
         let contador = document.getElementById('count');
