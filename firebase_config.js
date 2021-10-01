@@ -1,10 +1,11 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyDSe6s51_axRR7v-DZ0jxGClTqa5BWCjDM",
-    authDomain: "curso-firebase-web-7cd00.firebaseapp.com",
-    projectId: "curso-firebase-web-7cd00",
-    storageBucket: "curso-firebase-web-7cd00.appspot.com",
-    messagingSenderId: "394806012420",
-    appId: "1:394806012420:web:4d6d57199272784954e351"
+    apiKey: "AIzaSyAN7lhI0o34cNGha7ne50I5q9Tx3EjFABI",
+    authDomain: "comments-ddee5.firebaseapp.com",  
+    databaseURL: "https://comments-ddee5-default-rtdb.firebaseio.com",  
+    projectId: "comments-ddee5",  
+    storageBucket: "comments-ddee5.appspot.com",  
+    messagingSenderId: "282421967272",  
+    appId: "1:282421967272:web:86f0304456d45a07f9059d"  
 };
 
 firebase.initializeApp(firebaseConfig);

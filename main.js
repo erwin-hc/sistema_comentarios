@@ -70,7 +70,7 @@ function OK() {
             comentario = document.getElementById("inputComen").value,
             data = timeStamp();             
         
-            db.collection("dados").add({
+            db.collection("comments").add({
             Nome: nome,
             Comentario: comentario,
             Data: data,
@@ -93,7 +93,7 @@ function OK() {
 
         liList.insertAdjacentHTML('afterbegin', ul);
     }
-    db.collection('dados').onSnapshot(snapshot => {
+    db.collection('comments').onSnapshot(snapshot => {
         snapshot.docChanges().forEach(change => {
                 if(change.type === 'added') {
                 renderUser(change.doc);
@@ -130,14 +130,14 @@ function OK() {
         for (i = 0; i < y.length; i++) {
             y[i].style.display="block";
         }
-        db.collection('dados').get().then(function(querySnapshot) {      
+        db.collection('comments').get().then(function(querySnapshot) {      
             document.getElementById('count').value = querySnapshot.size;
         });
     }
 
     function conta_comentarios(){
         let contador = document.getElementById('count');
-            db.collection('dados').get().then(function(querySnapshot) {
+            db.collection('comments').get().then(function(querySnapshot) {
                     if (querySnapshot.size === 0) {
                         contador.value = '';
                     } else {

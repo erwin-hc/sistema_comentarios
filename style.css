@@ -24,9 +24,10 @@ body {
     min-width: 300px;
 }
 .box-form form {    
-    display: inline-block;   
+    display: block;
 }
 .box-form h1 {
+    text-align: left;
     letter-spacing: 6px;
     position: relative;
 }
