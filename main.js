@@ -119,21 +119,21 @@ function OK() {
     /// SHOW MORE
     document.getElementById("btn-showmore").addEventListener('click',function (e){
     e.preventDefault(); 
-    myFunction();
+    showmore();
     conta_comentarios()
     });    
 
-    // function myFunction() {
-    //     var x = listarDados;
-    //     var y = x.getElementsByTagName("div");
-    //     var i;
-    //     for (i = 0; i < y.length; i++) {
-    //         y[i].style.display="block";
-    //     }
-    //     db.collection('comments').get().then(function(querySnapshot) {      
-    //         document.getElementById('count').value = querySnapshot.size;
-    //     });
-    // }
+    function showmore() {
+        var x = listarDados;
+        var y = x.getElementsByTagName("div");
+        var i;
+        for (i = 0; i < y.length; i++) {
+            y[i].style.display="block";
+        }
+        db.collection('comments').get().then(function(querySnapshot) {      
+            document.getElementById('count').value = querySnapshot.size;
+        });
+    }
 
     function conta_comentarios(){
         let contador = document.getElementById('count');

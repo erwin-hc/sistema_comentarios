@@ -84,6 +84,10 @@ input[type="text"] {
     background: #C15322;
 }
 
+#btn-showmore {
+    width: 95%;
+}
+
 .card-coments {
     overflow: hidden;
     width: 100%;
@@ -97,7 +101,7 @@ ul.lista {
     padding: 0;
     width: 95%;    
 }
-#cardId:nth-child(n+5) {
+#cardId:nth-child(n+3) {
     display:none;
 }
 .li-nome {
